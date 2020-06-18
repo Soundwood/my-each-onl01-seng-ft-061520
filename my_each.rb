@@ -6,7 +6,7 @@ def my_each(array) # put argument(s) here
   new_array = []
   counter = 0 
   while counter < array_size
-    yield
+    yield(new_array << array[counter])
     counter += 1 
   end
   return new_array
